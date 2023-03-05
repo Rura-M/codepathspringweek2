@@ -29,7 +29,6 @@ class DetailViewController: UIViewController {
 
         // Load the image located at the `artworkUrl100` URL and set it on the image view.
 //        Nuke.loadImage(with: movie.artworkUrl100, into: trackImageView)
-
         // Set labels with the associated track values.
         movieNameLabel.text = movie.title
         movieVotesLabel.text = String(movie.voteCount) + " Votes"
