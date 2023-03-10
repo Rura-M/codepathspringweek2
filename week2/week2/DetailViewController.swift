@@ -26,16 +26,17 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let backdropImage = URL(string: "https://image.tmdb.org/t/p/w500/" + movie.backdrop_path)
         // Load the image located at the `artworkUrl100` URL and set it on the image view.
 //        Nuke.loadImage(with: movie.artworkUrl100, into: trackImageView)
         // Set labels with the associated track values.
-        movieNameLabel.text = movie.title
-        movieVotesLabel.text = String(movie.voteCount) + " Votes"
-        movieOverviewLabel.text = movie.description
+        movieNameLabel.text = movie.original_title
+        movieVotesLabel.text = String(movie.vote_count) + " Votes"
+        movieOverviewLabel.text = movie.overview
         moviePopularityLabel.text = String(movie.popularity) + " Popularity"
-        movieVoteAverageLabel.text = String(movie.voteAverage) + " Vote Average"
-        Nuke.loadImage(with: movie.artworkUrl100, into: movieImageLabel)
+        movieVoteAverageLabel.text = String(movie.vote_average) + " Vote Average"
+        Nuke.loadImage(with: backdropImage!, into: movieImageLabel)
         
         // Create a date formatter to style our date and convert it to a string
 //        let dateFormatter = DateFormatter()
