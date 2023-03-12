@@ -251,8 +251,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7U0-UG-cpn">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="10" y="103" width="373" height="666"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tCz-9r-LHb">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -261,10 +261,10 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PosterCell" id="zo0-an-EfM" customClass="PosterCell" customModule="Flixster" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vzU-nd-tX9">
-                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zTF-ug-Icx">
@@ -286,12 +286,12 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nSo-sw-RdR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7U0-UG-cpn" firstAttribute="top" secondItem="nSo-sw-RdR" secondAttribute="top" id="2i2-2B-zlp"/>
                             <constraint firstItem="nSo-sw-RdR" firstAttribute="bottom" secondItem="7U0-UG-cpn" secondAttribute="bottom" id="Bm9-yp-gu7"/>
-                            <constraint firstItem="7U0-UG-cpn" firstAttribute="leading" secondItem="nSo-sw-RdR" secondAttribute="leading" id="My3-Sg-WiE"/>
-                            <constraint firstItem="nSo-sw-RdR" firstAttribute="trailing" secondItem="7U0-UG-cpn" secondAttribute="trailing" id="wXY-bF-UMA"/>
+                            <constraint firstItem="7U0-UG-cpn" firstAttribute="leading" secondItem="nSo-sw-RdR" secondAttribute="leading" constant="10" id="My3-Sg-WiE"/>
+                            <constraint firstItem="nSo-sw-RdR" firstAttribute="trailing" secondItem="7U0-UG-cpn" secondAttribute="trailing" constant="10" id="wXY-bF-UMA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Posters" id="XkL-x4-hcQ"/>
@@ -312,6 +312,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dlc-U5-JNI">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -331,9 +336,6 @@
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -45,7 +45,8 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource {
 
         // The minimum spacing between adjacent cells (left / right, in vertical scrolling collection)
         // Set this to taste.
-        layout.minimumInteritemSpacing = 0
+        
+        layout.minimumLineSpacing = 0
 
         // The minimum spacing between adjacent cells (top / bottom, in vertical scrolling collection)
         // Set this to taste.
