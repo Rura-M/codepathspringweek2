@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var movieOverviewLabel: UITextView!
     
     // A property to store the track object.
+    // commenting..
     // We can set this property by passing along the track object associated with the track the user tapped in the table view.
     var movie: Movie!
 
